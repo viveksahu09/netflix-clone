@@ -22,7 +22,7 @@ function App() {
   return (
     <BrowserRouter>
       <ReactRoute />
-        <img src={backImg} alt="Background" />
+        {/* <img src={backImg} alt="Background" /> */}
     </BrowserRouter>
   );
 }
