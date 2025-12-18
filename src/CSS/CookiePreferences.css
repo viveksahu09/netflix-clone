@@ -1,0 +1,139 @@
+.cookie-pref-main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(2, 2, 2, 0.7); /* dark overlay for popup */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.cookie-pref-container {
+  background-color: #fff;
+  width: 50%;
+  height: 70vh; /* fixed height so inner scroll works */
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- HEADER ---------- */
+.Privacy-center-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.privacy-header-link img {
+  display: block;
+  padding-left: 3rem;
+}
+
+.privacy-header-heading h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-right: 8rem;
+}
+
+.privacy-header-btn button {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ---------- MAIN ---------- */
+.Privacy-center-main {
+  flex: 1;
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden; /* keeps scroll inside */
+}
+
+/* Sidebar */
+.privacy-main-sidebar {
+  width: 35%;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ddd;
+  overflow-y: auto; /* optional if long */
+}
+
+.privacy-sidebar-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy-sidebar-btn button {
+  padding: 15px 10px;
+  font-size: 0.95rem;
+  border: none;
+  background: transparent;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.privacy-sidebar-btn button:hover {
+  background-color: #ececec;
+}
+
+/* ---------- SCROLLABLE CONTENT ---------- */
+.privcy-main-contant {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  overflow-y: auto; /* <-- key: scroll inside */
+}
+
+.privacy-main-contant-container {
+  line-height: 1.6;
+}
+
+.privacy-contain-heading {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.privacy-contant-text {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.privacy-contant-text span {
+  color: #0073e6;
+  cursor: pointer;
+}
+
+/* ---------- FOOTER ---------- */
+.Privacy-center-footer {
+  padding: 1rem;
+  text-align: left;
+  border-top: 1px solid #ccc;
+}
+
+.Privacy-center-footer button {
+  padding: 0.6rem 1.5rem;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Privacy-center-footer button:hover {
+  background-color: #b00710;
+}
+
+.privacy-center-footer-logo {
+    padding: 1rem 0;
+    /* background-color: #dad5d557; */
+    text-align: right;
+}

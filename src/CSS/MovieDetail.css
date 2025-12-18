@@ -1,0 +1,123 @@
+/* Overlay behind modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal container */
+.movie-detail {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+  width: 50%;
+  max-width: 60vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header: image + title + close */
+.detail-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detail-header img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain; /* fits entire image */
+  border-radius: 10px;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: "background 0.2s";
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Body content */
+.detail-body {
+  display: flex;
+  flex-direction: column;
+  overflow: auto hidden;
+  background: rgb(22, 22, 22);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0.25rem 0.5rem 0px;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.movie-tags {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 1rem;
+}
+
+.movie-tags li {
+  border: 2px solid;
+  padding: 0px 8px;
+}
+
+.detail-body p {
+  margin: 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.watch-btn {
+  align-self: center;
+  background-color: #e50914; /* Netflix red */
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: " background 0.2s";
+}
+
+.watch-btn:hover {
+  background-color: #b20710;
+}

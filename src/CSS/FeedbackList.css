@@ -1,0 +1,82 @@
+/* === Feedback Page Styling === */
+
+.feedback-container {
+  color: #fff;
+  padding: 2rem 3rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(48, 249, 246);
+}
+
+/* Optional: dark overlay for better text contrast */
+.feedback-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* translucent overlay */
+  z-index: 0;
+}
+
+.feedback-content {
+  position: relative;
+  z-index: 1; /* make sure content appears above overlay */
+}
+
+.feedback-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff4747;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.feedback-list {
+  list-style: none;
+  margin-top: 1rem;
+  padding-left: 5rem;
+}
+
+.feedback-list li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.feedback-list li:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.feedback-list strong {
+  color: #ff4747;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .feedback-container {
+    padding: 1.5rem;
+  }
+
+  .feedback-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .feedback-list li {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+}

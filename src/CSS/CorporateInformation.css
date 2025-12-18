@@ -1,0 +1,67 @@
+.page-content {
+  background-color: rgb(255, 255, 255);
+  padding: 2.4rem;
+  padding-left: 8%;
+}
+
+.page-content-back {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.language-selector {
+  font-size: large;
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  gap: 2rem;
+  font-weight: bold;
+  border-top: 1px solid #000;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.language-selector select {
+  padding: 0.6rem;
+  border-radius: 5px;
+  width: 15%;
+  font-size: medium;
+}
+
+.corporate-info-artical {
+  width: 100%;
+  border-top: 1px solid #000;
+}
+
+.corporate-info-artical section {
+  margin: 3rem 0;
+  width: 60%;
+}
+
+.corporate-info-artical section h1 {
+  font-size: 3rem;
+  /* padding: 1.6rem 0; */
+}
+
+.corporate-info-artical section p {
+  font-size: 17px;
+}
+
+.corporate-info-artical section p span {
+  color: red;
+}
+
+.corporate-info-feedback {
+  border-top: 1px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.corporate-info-feedback button {
+  background-color: #fff;
+  border: none;
+  text-decoration: underline;
+  font-size: 16px;
+}
