@@ -15,9 +15,6 @@ import "./CSS/MoveSlider.css";
 import "./CSS/MovieDetail.css";
 import "./CSS/ContactUs.css";
 
-import backImg from "../assets/back-img.jpg";
-<img src={backImg} />;
-
 function App() {
   return (
     <BrowserRouter>
