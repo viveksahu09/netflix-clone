@@ -15,10 +15,14 @@ import "./CSS/MoveSlider.css";
 import "./CSS/MovieDetail.css";
 import "./CSS/ContactUs.css";
 
+import backImg from './assets/back-img.jpg'; // path relative to App.jsx
+
+
 function App() {
   return (
     <BrowserRouter>
       <ReactRoute />
+        <img src={backImg} alt="Background" />
     </BrowserRouter>
   );
 }
